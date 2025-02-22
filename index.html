@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Pricing UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">YAY! It's <span class="bogo">BOGO</span></h2>
+
+        <div class="option" onclick="selectOption(this, '195.00')">
+            <span class="discount">50% OFF</span>
+            <p>1 Unit</p>
+            <p class="price">DKK 195.00 <span class="original">DKK 390.00</span></p>
+            <div class="size-options">
+                <div>
+                    <label>Size</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Color</label>
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="option popular" onclick="selectOption(this, '345.00')">
+            <span class="discount">40% OFF</span>
+            <span class="tag">MOST POPULAR</span>
+            <p>2 Units</p>
+            <p class="price">DKK 345.00 <span class="original">DKK 575.00</span></p>
+        </div>
+
+        <div class="option" onclick="selectOption(this, '528.00')">
+            <span class="discount">60% OFF</span>
+            <p>3 Pairs</p>
+            <p class="price">DKK 528.00 <span class="original">DKK 880.00</span></p>
+        </div>
+
+        <p class="free-delivery">Free 2-Day Shipping</p>
+        <p class="total">Total: <span id="total-price">DKK 195.00</span></p>
+        <button class="add-to-cart">+ Add to Cart</button>
+
+        <p class="powered">@ Powered by Pumper</p>
+    </div>
+</body>
+</html>
